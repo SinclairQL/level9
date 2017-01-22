@@ -18,8 +18,8 @@
 #######################################################################
 
 CC = qdos-gcc
-OBJS = level9.o bitmap.o ql.o
-CFLAGS = -Wall
+OBJS = level9.o ql.o # bitmap.o
+CFLAGS = -Wall -O2
 LFLAGS = -lm
 RM = rm -f
 LIBS = 
