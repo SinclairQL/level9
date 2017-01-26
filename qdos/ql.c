@@ -25,6 +25,7 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <string.h>
+#include <qdos.h>
 #include "level9.h"
 
 #define TEXTBUFFER_SIZE 10240
@@ -32,12 +33,12 @@ char TextBuffer[TEXTBUFFER_SIZE+1];
 int TextBufferPtr = 0;
 
 int Column = 0;
-#define SCREENWIDTH 76
+#define SCREENWIDTH 68
 
+struct WINDOWDEF _condetails = { 2, 1, 0, 7, 420, 200, 45, 20 };
 char _prog_name[] = "level9";
 char _copyright[] = "(c)tcat 2017";
 char _version[] = "5.1";
-
 /* void (*_consetup)() = consetup_title; */
 
 
